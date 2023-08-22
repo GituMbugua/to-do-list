@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div>
+    <form method="POST" action="">
+        <h1>New Task</h1>
+            {% csrf_token %}
+            {{ form }}
+        <input class="btn btn-success" type="submit" value="Submit">
+        <a href="{% url 'home' %}"><button class="btn btn-default">Cancel</button></a>
+    </form>
+</div>
+
+{% endblock content %}
