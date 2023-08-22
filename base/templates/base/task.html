@@ -1,0 +1,29 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="header flex">
+        <div class="title col-6 ">
+            <h1>{{ task.title }}</h1>
+        </div>
+        <div class="title col-6">
+            <a href="{% url 'home' %}"><button class="btn btn-default">Back</button></a>
+            <a href="{% url 'update-task' task.id %}"><button class="btn btn-primary">Edit</button></a>
+            <a href="{% url 'delete-task' task.id %}"><button class="btn btn-warning">Delete</button></a>
+        </div>
+    </div>
+    <h3>Description: </h3>
+    <p>{{ task.description }}</p>
+
+    <h3>Date Created</h3>
+    <p>{{ task.created }}</p>
+
+    <h3>Due Date</h3>
+    <p>{{ task.due }}</p>
+
+    <h3>Status</h3>
+    <p>{{ task.status }}</p>
+</div>
+
+{% endblock %}
