@@ -34,13 +34,13 @@ Before you begin, ensure that you have the following software installed:
 1. Clone this repository to your local machine:
 
    ```
-   git clone [repository URL]
+   git clone "https://github.com/GituMbugua/to-do-list.git"
    ```
 
 2. Navigate to the project directory:
 
    ```
-   cd [project directory]
+   cd /to-do-list
    ```
 
 3. Create a virtual environment to isolate project dependencies:
@@ -97,7 +97,7 @@ We welcome contributions to our project! If you'd like to contribute, follow the
 5. Create a pull request detailing your changes.
 
 ## License
-[LICENSE]LICENSE
+[LICENSE](./LICENSE)
 
 ---
 Happy coding!
